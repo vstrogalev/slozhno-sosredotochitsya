@@ -1,5 +1,42 @@
-/* Основные стили проекта. Это стили для темы, которую вы верстаете первой. */
+:root {
+  font-size: 18px;
+}
 
 .page {
   /* сохраните в разметке и стилях класс page. На его основе работает скрипт. */
+  font-family: 'IBM Plex mono', Arial, Helvetica, sans-serif;
+  font-size: 1rem;
+  font-weight: normal;
+  font-style: normal;
+  line-height: 130%;
+}
+
+.header {
+}
+
+.decorated-zone {
+}
+
+.header__theme-menu {
+}
+
+.header__theme-menu-list {
+}
+
+.header__theme-menu-item {
+}
+
+.header__theme-menu-button {
+}
+
+.header__theme-menu-button_type_light {
+}
+
+.header__theme-menu-button_active {
+}
+
+.header__theme-menu-button_type_auto {
+}
+
+.header__theme-menu-button_type_dark {
 }
