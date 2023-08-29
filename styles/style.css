@@ -1,42 +1,232 @@
 :root {
-  font-size: 18px;
+  font-size: 16px;
 }
 
 .page {
-  /* сохраните в разметке и стилях класс page. На его основе работает скрипт. */
   font-family: 'IBM Plex mono', Arial, Helvetica, sans-serif;
   font-size: 1rem;
   font-weight: normal;
   font-style: normal;
   line-height: 130%;
+  color: var(--text-color, pink);
+  background-color: var(--bg-color, black);
 }
 
 .header {
+  block-size: 100vh;
+  padding: 10px;
+  display: grid;
+  justify-items: end;
+  align-items: stretch;
+  align-content: space-evenly;
 }
 
 .decorated-zone {
+  position: relative;
+}
+
+.decorated-zone::before {
+  content: '';
+  position: absolute;
+  top: .62rem;
+  right: .62rem;
+  inline-size: 1.56488rem;
+  block-size: 1.56244rem;
+  border-top: 1px solid var(--title-color, purple);
+  border-right: 1px solid var(--title-color, purple);
+}
+
+.decorated-zone::after {
+  content: '';
+  position: absolute;
+  bottom: .62rem;
+  left: .62rem;
+  inline-size: 1.56488rem;
+  block-size: 1.56244rem;
+  border-bottom: 1px solid var(--accent-bg-color, purple);
+  border-left: 1px solid var(--accent-bg-color, purple);
+}
+
+.rec {
+  position: absolute;
+  top: 13px;
+  right: 42px;
+  color: var(--accent-bg-color, purple);
+  text-transform: uppercase;
+  align-self: start;
+}
+
+.rec::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: -25px;
+  background-image: url(../images/rec.svg);
+  inline-size: 18px;
+  block-size: 18px;
+  object-fit: cover;
+  object-position: center;
+  fill: #FF0070;
+
+  /* background-color: var(--accent-bg-color, purple);
+  filter: drop-shadow(0px 0px 4px var(--accent-bg-color, purple));
+  border-radius: 100%;
+ */
+}
+
+.title {
+  font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
+  font-weight: bold;
+  color: var(--header-title-color, pink);
+  text-shadow: 4px 4px 0px var(--accent-bg-color, purple);
+  line-height: 82.5%;
+}
+
+.title-decor {
+  color: var(--accent-color, black);
+  background-color: var(--accent-bg-color, pink);
+  font-size: 1.125rem;
+  font-weight: bold;
+  line-height: 130%;
 }
 
 .header__theme-menu {
+  height: 119px;
 }
 
 .header__theme-menu-list {
+  margin-top: 9px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
 }
 
 .header__theme-menu-item {
 }
 
 .header__theme-menu-button {
+  block-size: 26px;
+  padding: 0 13px;
+  color: var(--title-color, purple);
+  font-size: 1.125rem;
+  line-height: 100%;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  text-transform: lowercase;
 }
 
 .header__theme-menu-button_type_light {
 }
 
 .header__theme-menu-button_active {
+  border: 1px solid #FF0070;
 }
 
 .header__theme-menu-button_type_auto {
 }
 
 .header__theme-menu-button_type_dark {
+}
+
+.content {
+  padding: 2.5rem 0.63rem;
+}
+
+.section {
+  margin-block-end: 3.12rem;
+}
+
+.section__title {
+  color: var(--title-color, purple);
+  font-size: 1.125rem;
+  font-weight: bold;
+  line-height: 130%;
+  margin-block-end: 1.25rem;
+}
+
+.section__list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 1fr);
+  gap: 1.25rem;
+}
+
+.section__list-item {
+}
+
+.section__list-item-title {
+  margin-block-end: .62rem;
+}
+
+.subtitle {
+  margin-block-end: 1.25rem;
+}
+
+.section__list-item-paragraph {
+  font-size: 18px;
+  line-height: 130%;
+}
+
+.section__list-item-link {
+}
+
+.section__sub-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 1fr);
+  gap: 1.25rem;
+}
+
+.section__sub-list-item {
+}
+.section__sub-list-item-title {
+  font-weight: normal;
+  margin-block-end: .62rem;
+}
+
+.section__sub-list-item-paragraph {
+  font-size: 18px;
+  line-height: 130%;
+}
+
+.section__sublist-images {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: .63rem;
+}
+
+.section__sublist-image {
+}
+
+.section__sublist-img {
+  display: block;
+  inline-size: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.pictures {
+
+}
+
+.pictures__title {
+  margin-block-end: .62rem;
+}
+
+.footer {
+  block-size: 100vh;
+  padding: .62rem;
+  display: grid;
+  justify-items: center;
+  align-items: center;
+}
+
+.footer__title {
+  color: #DB00FF;
+  text-shadow: 2px 2px 0px #FF0070;
+  font-family: IBM Plex Mono;
+  font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
+  font-weight: bold;
+  line-height: 82.5%;
 }
