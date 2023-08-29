@@ -14,3 +14,6 @@
   --accent-bg-color: #ff8dcb;
 }
 
+.page.theme_light .rec {
+  display: none;
+}

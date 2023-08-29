@@ -1,0 +1,23 @@
+@media (prefers-color-scheme: light) {
+  .page.theme_auto {
+    --header-title-color: #FFC2E6;
+    --header-shadow-color: #ff0070;
+    --title-color: #353430;
+    --text-color: #353430;
+    --bg-color: #FFF1F7;
+    --accent-color: #353430;
+    --accent-bg-color: #ff8dcb;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  .page.theme_auto {
+    --header-title-color: #DB00FF;
+    --header-shadow-color: #ff0070;
+    --title-color: #FF0070;
+    --text-color: #F1B2CE;
+    --bg-color: #000028;
+    --accent-color: #000028;
+    --accent-bg-color: #ff0070;
+  }
+}

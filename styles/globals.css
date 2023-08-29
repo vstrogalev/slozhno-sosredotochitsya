@@ -48,7 +48,7 @@ button:focus {
 
 a:focus-visible,
 button:focus-visible {
-  outline: 1px solid currentColor;
+  outline: none;
 }
 
 button:disabled {
