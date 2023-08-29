@@ -12,6 +12,11 @@
   --bg-color: #FFF1F7;
   --accent-color: #353430;
   --accent-bg-color: #ff8dcb;
+  background-image: url(../images/cover-image-light.png);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
 }
 
 .page.theme_light .rec {

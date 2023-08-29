@@ -20,7 +20,8 @@
   --accent-color: #000028;
   --accent-bg-color: #ff0070;
   background-image: url(../images/cover-image-dark.png);
-  background-size: calc(100% + );
+  background-size: cover;
+  background-position: center;
   background-attachment: fixed;
   background-repeat: no-repeat;
 }

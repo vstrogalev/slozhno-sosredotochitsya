@@ -167,7 +167,7 @@
 }
 
 .section__list-item-title {
-  margin-block-end: .62rem;
+  margin-block-end: var(--paddings, .62rem);;
 }
 
 .subtitle {
@@ -175,7 +175,7 @@
 }
 
 .section__list-item-paragraph {
-  font-size: 18px;
+  font-size: 1.125rem;
   line-height: 130%;
 }
 
@@ -202,7 +202,7 @@
 }
 .section__sub-list-item-title {
   font-weight: normal;
-  margin-block-end: .62rem;
+  margin-block-end: var(--paddings, .62rem);;
 }
 
 .section__sub-list-item-paragraph {
@@ -231,7 +231,7 @@
 }
 
 .pictures__title {
-  margin-block-end: .62rem;
+  margin-block-end: var(--paddings, .62rem);;
 }
 
 .footer {
@@ -243,9 +243,8 @@
 }
 
 .footer__title {
-  color: #DB00FF;
-  text-shadow: 2px 2px 0px #FF0070;
-  font-family: IBM Plex Mono;
+  color: var(--header-title-color, pink);
+  text-shadow: 2px 2px 0px var(--header-shadow-color, purple);
   font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
   font-weight: bold;
   line-height: 82.5%;
