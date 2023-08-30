@@ -4,6 +4,7 @@
 
 .page {
   font-family: 'IBM Plex mono', Arial, Helvetica, sans-serif;
+  max-inline-size: 1024px;
   font-size: 1rem;
   font-weight: normal;
   font-style: normal;
@@ -16,9 +17,9 @@
   block-size: 100vh;
   padding: var(--paddings, .62rem);
   display: grid;
+  grid-template-rows: 1fr min-content 1fr;
   justify-items: end;
-  align-items: stretch;
-  align-content: space-evenly;
+  align-items: center;
 }
 
 .decorated-zone {
@@ -85,20 +86,12 @@
   line-height: 130%;
 }
 
-.header__theme-menu {
-  height: 119px;
-}
-
 .header__theme-menu-list {
-  margin-top: 9px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   gap: 10px;
-}
-
-.header__theme-menu-item {
 }
 
 .header__theme-menu-button {
@@ -122,18 +115,8 @@
   border-bottom: 1px solid currentColor;
 }
 
-.header__theme-menu-button_type_light {
-
-}
-
 .header__theme-menu-button_active {
   border: 1px solid currentColor;
-}
-
-.header__theme-menu-button_type_auto {
-}
-
-.header__theme-menu-button_type_dark {
 }
 
 .content {
@@ -154,11 +137,8 @@
 
 .section__list {
   display: grid;
-  grid-template-columns: repeat(auto-fill, 1fr);
+  grid-template-columns: 1fr;
   gap: 1.25rem;
-}
-
-.section__list-item {
 }
 
 .section__list-item-title {
@@ -193,8 +173,6 @@
   gap: 1.25rem;
 }
 
-.section__sub-list-item {
-}
 .section__sub-list-item-title {
   font-weight: normal;
   margin-block-end: .62rem;
@@ -216,10 +194,6 @@
   inline-size: 100%;
   object-fit: cover;
   object-position: center;
-}
-
-.pictures {
-
 }
 
 .pictures__title {
@@ -294,9 +268,6 @@
     aspect-ratio: 1 / 1;
   }
 
-  .section__sublist-image {
-  }
-
   .section__sublist-img {
     block-size: 100%;
   }
@@ -323,5 +294,35 @@
   .pic5 {
     grid-column: 2 / 4;
     grid-row: 3 / 4;
+  }
+
+  .footer__title {
+    font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
+  }
+}
+
+@media (width >= 1024px) {
+  .header__theme-menu {
+    align-self: start;
+    justify-self: center;
+  }
+
+  .header__theme-menu-list {
+    flex-direction: row;
+  }
+
+  .section {
+    --col1: calc(35% - 29px);
+    grid-template-columns: var(--col1) 66%;
+  }
+
+  .section-wide {
+    grid-template-columns: 1fr;
+
+  }
+
+  .section-wide__list {
+    grid-template-columns: repeat(auto-fill, minmax(300px, auto));
+    grid-auto-flow: row;
   }
 }

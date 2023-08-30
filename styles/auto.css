@@ -7,6 +7,11 @@
     --bg-color: #FFF1F7;
     --accent-color: #353430;
     --accent-bg-color: #ff8dcb;
+    background-image: url(../images/cover-image-light.png);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
   }
 }
 
@@ -19,5 +24,10 @@
     --bg-color: #000028;
     --accent-color: #000028;
     --accent-bg-color: #ff0070;
+    background-image: url(../images/cover-image-dark.png);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
   }
 }
