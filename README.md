@@ -8,4 +8,4 @@
 HTML, CSS, JavaScript
 
 #Link to github repo
-https://github.com/vstrogalev/slozhno-sosredotochitsya/tree/main
+https://github.com/vstrogalev/slozhno-sosredotochitsya
