@@ -82,6 +82,7 @@
   font-size: var(--title-font-size, 7.25rem);
   line-height: 82.5%;
   text-shadow: 4px 4px 0px var(--accent-bg-color, purple);
+  justify-self: start;
 }
 
 .title-decor {
