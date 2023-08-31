@@ -1,5 +1,5 @@
 @media (prefers-color-scheme: light) {
-  .page.theme_auto {
+  .page {
     --header-title-color: #FFC2E6;
     --header-shadow-color: #ff0070;
     --title-color: #353430;
@@ -8,15 +8,15 @@
     --accent-color: #353430;
     --accent-bg-color: #ff8dcb;
     background-image: url(../images/cover-image-light.png);
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
-    background-repeat: no-repeat;
+  }
+
+  .page.theme_auto .rec {
+    display: none;
   }
 }
 
 @media (prefers-color-scheme: dark) {
-  .page.theme_auto {
+  .page {
     --header-title-color: #DB00FF;
     --header-shadow-color: #ff0070;
     --title-color: #FF0070;
@@ -25,9 +25,5 @@
     --accent-color: #000028;
     --accent-bg-color: #ff0070;
     background-image: url(../images/cover-image-dark.png);
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
-    background-repeat: no-repeat;
   }
 }
